@@ -7,48 +7,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link 
-        rel="stylesheet"  
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
-    >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
     <title>CryptoFutbol</title>
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-light bg-black">
+    <nav class="navbar navbar-light bg-black d-inline">
         <div class="container-fluid fs-5 bg-warning border border-dark">
 
-            <img src="data:image/png;base64,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" alt="" width="40">
-            <span class="navbar-text text-primary lead">
-                CryptoFut
-            </span>
-            <div class="vr"></div>
+            <div class="col-1 position-relative">
 
-            <div>
-                <span class="navbar-text">
+                <img src="/img/sports_volleyball_black_24dp 1.png" alt="" width="40" class="bg-dark p-2" >
+                <p class="navbar-text text-primary lead d-inline ms-4 me-4 h2 position-absolute text-start" id="nombre">
+                    CryptoFut 
+                </p>
+            </div>
+
+            <div class="d-flex justify-content-between col-7 ms-auto">
+                <span class="border border-2 border-dark"></span>
+                <p class="navbar-text  h6 d-inline ms-2">
                     CUENTA 4064646465
-                </span>
-            </div>
-            <div>
-                <span class="navbar-text">
+                </p>
+                
+                <p class="navbar-text h6 d-inline text-end">
                     1000$FTOK
-                </span>
+                </p>
             </div>
-            <div>
-                <span class="navbar-text">
+
+            <div class="d-flex justify-content-between col-2  ms-auto">
+                <span class="border border-2 border-dark"></span>
+
+                <p class="navbar-text h6 d-inline text-start">
                     Fecha 1
-                </span>
-            </div>
-            <div class="vr">
+                </p>
 
-            </div>
-
-            <div>
                 <a href="#" class="position-relative">
-                    <i class="bi bi-arrow-right-circle-fill"></i>                </a>
+                    <i class="bi bi-arrow-right-circle-fill d-inline"></i> 
+                </a>
+
+               
             </div>
+
+
+
 
         </div>
     </nav>
