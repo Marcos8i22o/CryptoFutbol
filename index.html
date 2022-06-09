@@ -19,117 +19,53 @@
   </head>
 
   <body>
-    <!-- Navbar -->
-    <div class="container-fluid d-flex bg-dark flex-row justify-content-between" id="navbar">
-      <div class="d-flex flex-row align-items-center justify-content-center px-4 py-1 bor-der" id="logo">
-        <img src="./img/logo.svg" alt="" class="" />
-        <p
-          class="text-white text-center m-0 ps-3 fs-3 fw-bold"
+    <div id="aplicacion" class="container-fluid d-flex flex-column justify-content-between">
+      <div
+        class="container-fluid d-flex flex-row justify-content-between"
+        id="navbar"
+      >
+        <div
+          class="d-flex flex-row align-items-center justify-content-center px-4 py-1 bor-der"
+          id="logo"
         >
-          CryptoFut
-        </p>
-      </div>
+          <img src="./img/logo.svg" alt="" class="" />
+          <p class="text-white text-center m-0 ps-3 fs-3 fw-bold">CryptoFut</p>
+        </div>
 
-      <div class="d-flex flex-row align-items-center justify-content-center px-4 py-1">
-        <p class="text-white text-center m-0 ps-3 fs-6 fw-bold">CUENTA 4064646465</p>
+        <div
+          class="d-flex flex-row align-items-center justify-content-center px-4 py-1"
+        >
+          <p class="text-white text-center m-0 ps-3 fs-6 fw-bold">
+            CUENTA 4064646465
+          </p>
 
-        <p class="text-white text-center m-0 ps-3 fs-6 fw-bold">1000$FTOK</p>
-      </div>
+          <p class="text-white text-center m-0 ps-3 fs-6 fw-bold">1000$FTOK</p>
+        </div>
 
-      <div class="d-flex flex-row align-items-center justify-content-center px-4 py-1" id="siguiente-fecha">
+        <div
+          class="d-flex flex-row align-items-center justify-content-center px-4 py-1"
+          id="siguiente-fecha"
+        >
+          <p class="text-white text-center m-0 ps-3 fs-6 fw-bold">Fecha 1</p>
 
-        <p class="text-white text-center m-0 ps-3 fs-6 fw-bold">Fecha 1</p>
-
-        <div id="boton-siguiente-fecha">
-          <img src="./img/arrow.svg" alt="" class="" />
+          <div id="boton-siguiente-fecha">
+            <img src="./img/arrow.svg" alt="" class="" />
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Tabla de posiciones
-    <table class="table table-dark table-striped table-sm text-center">
-        <thead>
-          <tr class="text-white">
-            <th scope="col">POS</th>
-            <th scope="col">EQUIPO</th>
-            <th scope="col">PJ</th>
-            <th scope="col">PG</th>
-            <th scope="col">PP</th>
-            <th scope="col">PE</th>
-            <th scope="col">GF</th>
-            <th scope="col">GC</th>
-            <th scope="col">PUNTOS</th>
-          </tr>
-        </thead>
-        <tbody class="table-group-divider">
-          <tr>
-            <th scope="row">1</th>
-            <td>EQUIPO A</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>EQUIPO B</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>EQUIPO C</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <th scope="row">4</th>
-            <td>EQUIPO D</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <th scope="row">5</th>
-            <td>EQUIPO E</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <th scope="row">6</th>
-            <td>EQUIPO F</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-          </tr>
-        </tbody>
-      </table>
-Tabla de posiciones -->
+      <div id="principal">
+        
+      </div>
+
+      <div id="menu-botones" class="container-fluid d-flex flex-row justify-content-center py-3">
+        <button class="button-81 mx-2" role="button">INICIO</button>
+        <button class="button-81 mx-2" role="button">EQUIPO</button>
+        <button class="button-81 mx-2" role="button">TORNEO</button>
+        <button class="button-81 mx-2" role="button">CLUB</button>
+        <button class="button-81 mx-2" role="button">TRANSFERENCIAS</button>
+      </div>
+    </div>
+   
   </body>
 </html>
