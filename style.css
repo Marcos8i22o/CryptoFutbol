@@ -11,25 +11,24 @@
     border-right: 3px solid white;
 }
 
-#boton-siguiente-fecha{
-    background-color: transparent;
-    border: none;
-}
-
 #siguiente-fecha{
     border-left: 3px solid white;
     cursor: pointer;
 }
 
+#siguiente-fecha:hover{
+    background-color: #1e293b;
+}
+
 #aplicacion {
-    background-color: #EBEBEB;
+    background-color: black;
     height: 100vh;
     padding: 0;
 }
 
 #principal{
     border-top: 3px solid white;
-    background-color: blue;
+    background-color: black;
     height: 100%;
 }
 
