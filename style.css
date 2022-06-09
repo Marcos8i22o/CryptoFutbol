@@ -11,3 +11,8 @@ i {
     width: 199px;
     height: 48px;
 }
+
+.container-fluid {
+    margin-top: -0.30rem;
+    margin-left: -0.5rem;
+}
