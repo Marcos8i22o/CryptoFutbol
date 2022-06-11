@@ -2,246 +2,172 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="style.css">
-    <title>CryptoFutbol</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>CryptoFutbol</title>
 </head>
 
-<body class="bg bg-secondary">
-    <!-- Navbar -->
-    <nav class="navbar navbar-light bg-black d-inline">
-        <div class="container-fluid fs-5 bg-warning border border-dark p-0">
+<body>
+  <div id="aplicacion" class="container-fluid d-flex flex-column justify-content-between">
+    <div class="container-fluid d-flex flex-row justify-content-between" id="navbar">
+      <div class="d-flex flex-row align-items-center justify-content-center px-4 py-1 bor-der" id="logo">
+        <img src="./img/logo.svg" alt="" class="" />
+        <p class="text-white text-center m-0 ps-3 fs-3 fw-bold">CryptoFut</p>
+      </div>
 
-            <div class="col-1 position-relative">
-                <img src="./img/logo.svg" alt="" width="40" class="bg-dark p-2" >
-                <p class="navbar-text text-primary lead d-inline ms-4 me-4 h2 position-absolute text-start fw-bold" id="nombre">
-                    CryptoFut 
-                </p>
-            </div>
+      <div class="d-flex flex-row align-items-center justify-content-center px-4 py-1">
+        <p class="text-white text-center m-0 ps-3 fs-6 fw-bold">
+          CUENTA 4064646465
+        </p>
 
-            <div class="d-flex justify-content-between col-7 ms-auto">
-                <span class="border border-2 border-dark"></span>
-                <p class="navbar-text  h5 d-inline ms-2 fw-bold text-dark">
-                    CUENTA 4064646465
-                </p>
-                <p class="navbar-text h5 d-inline text-end fw-bold text-dark">
-                    1000 $FTOK
-                </p>
-            </div>
+        <p class="text-white text-center m-0 ps-3 fs-6 fw-bold">1000$FTOK</p>
+      </div>
 
-            <div class="d-flex justify-content-between col-2  ms-auto">
-                <span class="border border-2 border-dark"></span>
-                <p class="navbar-text h5 d-inline text-start fw-bold text-dark">
-                    Fecha 1
-                </p>
-                <a href="#" class="position-relative">
-                    <i class="bi bi-arrow-right-square-fill d-inline"></i> 
-                </a>
-            </div>
+      <div class="d-flex flex-row align-items-center justify-content-between px-4 py-1" id="siguiente-fecha">
+        <p class="text-white text-center m-0 ps-3 fs-6 fw-bold">FECHA 1</p>
+
+        <div>
+          <img src="./img/arrow.svg" alt="" class="ps-1" />
         </div>
-    </nav>
+      </div>
+    </div>
 
-    <!-- Tabla de posiciones -->
-    <table class="table table-dark table-striped table-sm text-center">
-        <thead>
-          <tr class="text-white">
-            <th scope="col">POS</th>
-            <th scope="col">EQUIPO</th>
-            <th scope="col">PJ</th>
-            <th scope="col">PG</th>
-            <th scope="col">PP</th>
-            <th scope="col">PE</th>
-            <th scope="col">GF</th>
-            <th scope="col">GC</th>
-            <th scope="col">PUNTOS</th>
-          </tr>
-        </thead>
-        <tbody class="table-group-divider">
-          <tr>
-            <th scope="row">1</th>
-            <td>EQUIPO A</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>EQUIPO B</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>EQUIPO C</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <th scope="row">4</th>
-            <td>EQUIPO D</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <th scope="row">5</th>
-            <td>EQUIPO E</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <th scope="row">6</th>
-            <td>EQUIPO F</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <th scope="row">7</th>
-            <td>EQUIPO G</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <th scope="row">8</th>
-            <td>EQUIPO H</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <th scope="row">9</th>
-            <td>EQUIPO I</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <th scope="row">10</th>
-            <td>EQUIPO J</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <th scope="row">11</th>
-            <td>EQUIPO K</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <th scope="row">12</th>
-            <td>EQUIPO L</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <th scope="row">13</th>
-            <td>EQUIPO M</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <th scope="row">14</th>
-            <td>EQUIPO N</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <th scope="row">15</th>
-            <td>EQUIPO O</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-          </tr>
-        </tbody>
-      </table>
 
-<!-- Footer -->
+    <div id="principal" style="background-color: #D9D9D9;">
+      <div class="container text-center">
+        <table class="table" style="background-color: #9A9A9A;">
+          <thead>
+            <tr>
+              <th scope="col">POS</th>
+              <th scope="col">NOMBRE</th>
+              <th scope="col">ATQ</th>
+              <th scope="col">DEF</th>
+              <th scope="col">RES</th>
+              <th scope="col">PRECIO</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>ARQ</td>
+              <td>PEPITO</td>
+              <td>44</td>
+              <td>65</td>
+              <td>33</td>
+              <td>11 $FTOK</td>
+              <td><button class="text-white fs-5" style="background-color: #4AFD5C; width: 216px;">DETALLES</button></td>
+            </tr>
+            <tr>
+              <td>ARQ</td>
+              <td>PEPITO</td>
+              <td>44</td>
+              <td>65</td>
+              <td>33</td>
+              <td>11 $FTOK</td>
+              <td><button class="text-white fs-5" style="background-color: #4AFD5C; width: 216px;">DETALLES</button></td>
+            </tr>
+            <tr>
+              <td>ARQ</td>
+              <td>PEPITO</td>
+              <td>44</td>
+              <td>65</td>
+              <td>33</td>
+              <td>11 $FTOK</td>
+              <td><button class="text-white fs-5" style="background-color: #4AFD5C; width: 216px;">DETALLES</button></td>
+            </tr>
+            <tr>
+              <td>ARQ</td>
+              <td>PEPITO</td>
+              <td>44</td>
+              <td>65</td>
+              <td>33</td>
+              <td>11 $FTOK</td>
+              <td><button class="text-white fs-5" style="background-color: #4AFD5C; width: 216px;">DETALLES</button></td>
+            </tr>
+            <tr>
+              <td>ARQ</td>
+              <td>PEPITO</td>
+              <td>44</td>
+              <td>65</td>
+              <td>33</td>
+              <td>11 $FTOK</td>
+              <td><button class="text-white fs-5" style="background-color: #4AFD5C; width: 216px;">DETALLES</button></td>
+            </tr>
+            <tr>
+              <td>ARQ</td>
+              <td>PEPITO</td>
+              <td>44</td>
+              <td>65</td>
+              <td>33</td>
+              <td>11 $FTOK</td>
+              <td><button class="text-white fs-5" style="background-color: #4AFD5C; width: 216px;">DETALLES</button></td>
+            </tr>
+            <tr>
+              <td>ARQ</td>
+              <td>PEPITO</td>
+              <td>44</td>
+              <td>65</td>
+              <td>33</td>
+              <td>11 $FTOK</td>
+              <td><button class="text-white fs-5" style="background-color: #4AFD5C; width: 216px;">DETALLES</button></td>
+            </tr>
+            <tr>
+              <td>ARQ</td>
+              <td>PEPITO</td>
+              <td>44</td>
+              <td>65</td>
+              <td>33</td>
+              <td>11 $FTOK</td>
+              <td><button class="text-white fs-5" style="background-color: #4AFD5C; width: 216px;">DETALLES</button></td>
+            </tr>
+            <tr>
+              <td>ARQ</td>
+              <td>PEPITO</td>
+              <td>44</td>
+              <td>65</td>
+              <td>33</td>
+              <td>11 $FTOK</td>
+              <td><button class="text-white fs-5" style="background-color: #4AFD5C; width: 216px;">DETALLES</button></td>
+            </tr>
+            <tr>
+              <td>ARQ</td>
+              <td>PEPITO</td>
+              <td>44</td>
+              <td>65</td>
+              <td>33</td>
+              <td>11 $FTOK</td>
+              <td><button class="text-white fs-5" style="background-color: #4AFD5C; width: 216px;">DETALLES</button></td>
+            </tr>
+          </tbody>
+        </table>
 
-<div class="container-fluid">
-    <footer class="btn-group ms-lg-5">
-        <button class="button-64 btn me-lg-5" role="button"><span class="text">Inicio</span></button>
-        <button class="button-64 btn me-lg-5" role="button"><span class="text">Equipo</span></button>
-        <button class="button-64 btn me-lg-5" role="button"><span class="text">Torneo</span></button>
-        <button class="button-64 btn me-lg-5" role="button"><span class="text">Transferencias</span></button>
-        <button class="button-64 btn me-lg-5" role="button"><span class="text">Club</span></button>
-    </footer>
-</div>
 
+    
+      </div>
+
+          
+    
+      
+    </div>
+  </div>
+
+
+
+  <div id="menu-botones" class="container-fluid d-flex flex-row justify-content-center py-3">
+    <button class="button-81 mx-2" role="button">INICIO</button>
+    <button class="button-81 mx-2" role="button">EQUIPO</button>
+    <button class="button-81 mx-2" role="button">TORNEO</button>
+    <button class="button-81 mx-2" role="button">CLUB</button>
+    <button class="button-81 mx-2" role="button">TRANSFERENCIAS</button>
+  </div>
+  </div>
 </body>
 
 </html>
